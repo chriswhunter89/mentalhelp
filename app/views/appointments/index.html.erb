@@ -1,0 +1,5 @@
+<ul>
+  <% @appointments.each do |appointment| %>
+    <li><%= link_to appointment.name, appointment_path(appointment) %></li>
+  <% end %>
+</ul>
